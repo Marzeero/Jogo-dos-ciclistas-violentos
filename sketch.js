@@ -1,4 +1,5 @@
 // SE QUISER MAIS DIVERSÃO LIGUE O SOM
+// PARA LIGAR O SOM PRESSIONE ESPAÇO
 
 var path,mainCyclist;
 var player1,player2,player3, player4;
@@ -73,8 +74,6 @@ yellowCG = new Group();
 redCG = new Group();
 carro = new Group();
 
-trilhaSound.play();
-  
 }
 
 function draw() {
@@ -105,6 +104,7 @@ function draw() {
       //code to play cycle bell sound
     if(keyDown("space")) {
       cycleBell.play();
+      trilhaSound.play();
     }
     
     //creating continous opponent players
@@ -239,7 +239,6 @@ function reset(){
   redCG.destroyEach();
   
   distance = 0;
-  trilhaSound.play();
  }
 
 
